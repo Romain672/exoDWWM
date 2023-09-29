@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="./style.css">-->
+
+    <title>Bootstrap</title>
+
+    <!-- Those does nothing:-->
+    <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    -->
+    <!-- Those does nothing:-->
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid border border-danger ">
+        <!-- Header -->
+
+
+
+        <div class="bg-black pb-2 mt-1 mb-4">
+            <div class="row">
+                <div class="col-1 text-light fs-5">Compagny</div>
+                <div class="col-1 text-light">Users</div>
+                <div class="col-1 text-secondary">Ruches</div>
+                <div class="col-1 text-secondary">Stats</div>
+                <div class="col"><!--Vide--></div>
+                <div class="col-1 text-secondary">Profil</div>
+                <div class="col-1 text-secondary">Log out</div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Main -->
+        <div class="row">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <!--8/12*4/12 Image-->
+                        <img src="https://placehold.co/75x75" class="placeholder rounded-circle col-6">
+                    </div>
+                    <div class="col-8">
+                        <!--8/12*8/12 Template Name+Subject-->
+                        <div class="fs-5">Template Name</div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter your name"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
+
+
+
+                        <div class="fs-5">Subject</div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter subject" aria-label="Subject"
+                                aria-describedby="basic-addon2">
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--8/12 Message-->
+                <div class="fs-5">Message</div>
+                <div class="input-group">
+                    <textarea class="form-control" style="height: 200px"  aria-label="With textarea"
+                        placeholder="Enter your message"></textarea>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-3">
+                        <!--8/12*3/12 Message type + send to group + valider/annuler-->
+
+
+
+
+                        Message type
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Dropdown button</option>
+                            <option value="1" checked="">Action</option>
+                            <option value="2">Another action</option>
+                            <option value="3">Something else here</option>
+                        </select>
+                        </select>
+                        Send to group
+
+
+
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flex1">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Top management
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="flex2" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Marketing management
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="flex3">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Designer management
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="flex4" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Financial management
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="flex5">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Supply management
+                            </label>
+                            
+                            <button type="button" class="btn btn-sm btn-primary col-4 p-2 m-2">Valider</button>
+                            <button type="button" class="btn btn-sm btn-outline-dark col-4 p-2 m-2 text-secondary">Annuler</button>
+
+
+                          </div>
+
+                          <!--
+                        <div class="input-group mb-3">
+                            <div class="input-group-text bg-white border-0 padding-left-10 gap-2">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                                Top management
+                            </div>
+
+                            <div class="input-group-text bg-white border-0 padding-left-10 gap-2">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                                Marketing Department
+                            </div>
+                            <div class="input-group-text bg-white border-0 padding-left-10 gap-2">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                                Designer Department
+                            </div>
+                            <div class="input-group-text bg-white border-0 padding-left-10 gap-2">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                                Financial Department
+                            </div>
+                            <div class="input-group-text bg-white border-0 padding-left-10 gap-2">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                                Supply Department
+                            </div>
+                            <button type="button" class="btn btn-sm btn-primary col-4 p-2 m-2">Valider</button>
+                            <button type="button" class="btn btn-sm btn-outline-dark col-4 p-2 m-2">Annuler</button>
+                        </div>-->
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row border border-secondary border-1 mb-3">
+                    <!--4/12*12/12 Thumbnail label + lorem ipsum + boutons-->
+                    <img src="https://placehold.co/175x110" alt="placeholder">
+                    <div class="m-2">
+                        <div class="fs-4">Thumbnail label</div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ipsum est amet molestiae quidem! Aliquid, quos! Voluptate, quod blanditiis dolorum praesentium nihil, voluptatem nam eum quos, ullam quisquam minima vitae?
+                        <br>
+                        <button type="button" class="btn btn-sm btn-primary col-3 p-2">Button</button>
+                        <button type="button" class="btn btn-sm btn-secondary col-3 p-2">Button</button>
+                    </div>
+                </div>
+                <div class="row border-secondary border border-1 p-2">
+                    <!--4/12*12/12 Thumbnail label + selectors-->
+                    Thumbnail label:
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                      Set type:
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio1">
+                        <label class="form-check-label bg-primary rounded text-light" for="flexRadioDefault1">
+                          News
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio2">
+                        <label class="form-check-label bg-secondary rounded text-light" for="flexRadioDefault1">
+                          Reports
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio3">
+                        <label class="form-check-label bg-warning rounded text-black" for="flexRadioDefault2">
+                          Documents
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio4" checked>
+                        <label class="form-check-label bg-danger rounded text-light" for="flexRadioDefault2">
+                          Media
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio5">
+                        <label class="form-check-label bg-success rounded text-light" for="flexRadioDefault1">
+                          Text
+                        </label>
+                      </div>
+                      <button type="button" class="btn btn-sm btn-danger col-4 p-2 m-2">Supprimer</button>
+
+                      
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

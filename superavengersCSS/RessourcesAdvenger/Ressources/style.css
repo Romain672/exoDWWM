@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Tartiflette";
+    src: url("../../Oswald/Oswald-VariableFont_wght.ttf");
+}
+
+html {
+    background-color: #DBD7CE;
+    max-width: 750px;
+    margin: auto;
+    font-size: 16px;
+    font-family: "Tartiflette";
+}
+
+/* HEADER */
+
+header {
+    background-color: #F5E5A0;
+    text-transform: uppercase;
+    height: 100px;
+    margin-top:10px;
+    /*font-family: ; tochange*/
+}
+/*header >a>img {
+    background-color: red;
+}*/
+
+nav {
+    position: relative;
+    top:40px;
+    float:right;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #dc8f3a;
+    margin-right:20px;
+}
+
+
+/* AUTRES */
+
+h2 {
+    color: #dc8f3a;
+    font-size: 24px;
+    margin-top:0px;
+    padding-top:25px;
+    /*font-family: 'Oswald', sans-serif;*/
+}
+h2::before{
+    content: url("icons/mask-solid.svg");
+    display: inline-block;
+    width: 1em; 
+    height: 0.8em;
+    filter: invert(82%) sepia(21%) saturate(5444%) hue-rotate(331deg) brightness(91%) contrast(89%);
+
+    position:relative;
+    top:0.1em;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+main{
+    background-color: white;
+}
+article{
+    background-color: white;
+    padding-bottom:27px;
+}
+img {
+    float: left;
+    padding-right:5px;
+}
+article > a {
+    background-color: #FF8B00;
+    color:white;
+    text-decoration: none;
+    padding:5px;
+    float:right;
+    margin-right:20px;
+}
+
+footer {
+    color: gray;
+    text-align: center;
+    position: relative;
+    bottom:-20px;
+    margin-bottom:50px;
+}
+
+article > img {
+    width:250px;
+}

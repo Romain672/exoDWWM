@@ -1,0 +1,51 @@
+/** {
+    color:white;
+}*/
+
+h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+h2 {
+    font-style: italic ;
+}
+
+p + a {
+    background-color:red;
+    color: yellow;
+    text-decoration: none;
+}
+
+p + a:hover {
+    background-color:green;
+    color: red;
+}
+
+nav > ul {
+    list-style-type: none;
+    background-color: green;
+}
+nav > ul > li > a {
+    color:white;
+    text-decoration: none;
+}
+nav > ul > li {
+    display: inline;
+}
+
+div {
+    background-color: green;
+}
+.option2 {
+    background-color: rgb(183, 236, 25);
+    color:blueviolet
+}
+.option1 {
+    background-color:#b10f2f;
+    color:blue;
+    font-style:italic;
+}
+
+#parap{
+    color:black;
+}

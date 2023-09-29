@@ -1,0 +1,73 @@
+PAGE FORMATION
+
+Admission
+Prérequis
+Être titulaire du baccalauréat ou équivalent, de préférence scientifique ou technologique.
+Pratique courante de l'ordinateur, des smartphones et tablettes tactiles ainsi que de leurs outils.
+Pratique de l'anglais à l’oral et à l’écrit (lire, comprendre des textes courts, poser des questions simples sans trop d’hésitation et 
+exprimer ses opinions).
+Accès à la formation
+Dossier de demande de formation - Tests et Entretien
+Le métier 
+Le développeur web / la développeuse réalise l’ensemble des fonctionnalités techniques d’un site ou d'une application web. 
+Il conçoit des sites sur mesure ou adapte des solutions techniques existantes en fonction du projet et de la demande du client.
+Qualification 
+Titre professionnel de niveau 5  (BTS/DUT) de développeur/se Web et Web mobile
+
+Pédagogie
+Notre pédagogie privilégie la pratique en limitant les apports théoriques au strict nécessaire.
+Nous favorisons l'apprentissage par l'action et proposons des activités proches de situations professionelles.
+Nous créons un environnement propice à l'apprentissage par confrontation entre pairs et privilégions le travail de groupe.
+
+Modalités
+Selon les établissements et la formule retenue :
+100 % présentiel en établissement de formation
+100 % à distance
+Alternance avec des périodes en entreprise et en centre de formation
+Durée
+8 mois environ (1 190 heures).
+
+PAGE TEMOIGNAGES
+
+Alexis Garnier 
+Entreprise : WISY, Tulle
+Emploi : Développeur
+Témoignage : A Cogolin, je m‘ennuyais. L’immobilier, ce n’était pas pour moi.  
+J’avais envie de changer et de me lancer dans quelque chose que j’aimerais vraiment.
+C’est un bilan de compétences qui a confirmé mes aspirations pour le développement web.
+J’ai intégré la formation de Brive en 2018. 
+Je n’ai jamais travaillé dans l’informatique mais c’était toute ma passion. 
+Avec 35 heures de formation par semaine, 6 mois sur site et 2 mois en entreprise, je peux dire qu’on apprend beaucoup. 
+Notre groupe a bien fonctionné avec de l’écoute et de l’entraide. La compétition, c’était avant
+Illustration : photo. 90 px x 90 px
+
+Sarah chesnée
+Entreprise : SII, Bordeaux
+Emploi : Développeuse Web
+Si je devais résumer mon orientation professionnelle,
+je dirais que je suis passée du côté obscure de la force, 
+de la théorie à la technique. 
+J’ai fait des études en marketing et communication digitale. 
+Après l’obtention de mon diplôme, j’ai cherché du travail pendant plus d’un an et demi.
+A 24 ans, j’ai dû retourner vivre chez mes parents. 
+La formation de développeur AFPA, c’est pour moi un nouveau départ.
+D’abord, à l’Afpa, j’ai appris à voir mes expériences précédentes comme un atout pour mon nouveau métier, et non comme un échec.
+Grâce à tout ce que j’ai acquis ici, des bases solides, des méthodes de travail qui me permettent d’être autonome et 
+de m’adapter facilement aux nouvelles technologies, 
+j’ai de nouveau l’espoir d’intégrer l’emploi, et un emploi durable ! 
+Illustration : photo. 90 px x 90 px 
+Antoine Germanique
+Entreprise ADNEOM, Bruxelles
+Développeur Full-stack JS
+Mes expériences professionnelles précédentes avaient été diverses et variées; 
+liées principalement au monde du graphisme. 
+Ces activités ne m'apportaient pas la satisfaction et la stabilité que je recherchais. 
+Après la découverte d'un intérêt pour la programmation,
+j'ai décidé de consolider mes connaissances en suivant la formation développeur de l’AFPA. 
+Grâce à cette formation, j'ai pu bénéficier d'un environnement d'apprentissage
+favorable me donnant accès à des bases solides couvrant la totalité du spectre 
+du monde du développement Web. J'y ai également trouvé une équipe humainement investie dans la réussite des stagiaires. 
+J'y ai rencontré des collègues de formation dont la diversité et la motivation m'ont permis d'évoluer. 
+A l’issue de cette formation, j'ai facilement trouvé un emploi en Belgique dans un environnement stimulant qui m'ouvre toujours plus
+de possibilités pour mon avenir.
+Illustration : photo. 90 px x 90 px

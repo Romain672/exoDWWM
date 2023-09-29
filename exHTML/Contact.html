@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <img id="LogoAfpa" src="Ressources/SiteDWWM/Images/logo.jpeg">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="DescriptionFormation.html">La formation</a></li>
+                <li><a href="Témoignages.html">Témoignages</a></li>
+                <li><a href="Partenaires.html">Nos références</a></li>
+                <li><a href="Contact.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Contactez-nous</h1>
+
+
+    <form>
+        <label for="nom">Prénom Nom</label>
+        <input id="nom" placeholder="Luc Marcheciel" minlength="7" pattern=".+\s.+" required><br><br>
+        <label for="mail">Adresse mail</label>
+        <input id="mail" placeholder="luc.marcheciel@free.fr" minlength="12" type="email" pattern=".+@.+\..+" required><br><br>
+        <label for="tel">Téléphone</label>
+        <input id="tel" placeholder="0102030405" type="tel" required><br><br>
+        <label for="situation">Vous êtes</label>
+        <input name="situation" type="radio" required>Demandeur d'emploi
+        <input name="situation" type="radio">Salarié en transition pro
+        <input name="situation" type="radio">Autre
+        <br><br>
+        <label for="modalite">Votre modalité préférée</label>
+        <input name="modalite" type="radio" required>Formation en présentiel
+        <input name="modalite" type="radio">100% distance
+        <input name="modalite" type="radio">Alternance
+        <input name="modalite" type="radio">Pas de préférence
+        <br><br>
+        <label for="region">Vous êtes résident de</label>
+        <select name="region" required>
+            <option label="Choisissez votre région" selected="selected" disabled></option>
+            <option value="auvergne">Auvergne-Rhône-Alphes</option>
+            <option value="bourgogne">Bourgogne Franche-Co</option>
+            <option value="bretagne">Bretagne</option>
+        </select>
+        <br><br>
+        <label for="message">Votre message</label>
+        <textarea id="message"></textarea>
+        <br><br>
+        <button type="submit" formaction="ResultatContact.html">Envoyez</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+* {
+    font-family: Open Sans;
+    box-sizing:border-box;
+    color:white;
+}
+
+html {
+    background-color: #1B8B8F;
+}
+
+body {
+    width:80%;
+    margin: auto;
+}
+section {
+    background-color: #438089;
+}
+aside {
+    background-color: white;
+}
+aside p {
+    color:black;
+}
+
+h1, h2, h3 {
+    font-family: 'PT Sans Narrow';
+    font-size: 1.4em;
+    padding:10px;
+    margin:5px;
+    text-align: center;
+}
+
+header nav {
+    font-size: 1.6em;
+}
+section img, h2 {
+    border-radius: 10px;
+}
+nav {
+    display:flex;
+    justify-content: center;
+}
+nav > a {
+    text-decoration: none;
+    color:white;
+    padding:20px;
+}
+nav, h2 {
+    background-color: #5E3B30;
+}
+.fas {
+    background-color: inherit;
+}
+#logo{
+    display:block;
+    margin:auto;
+}
+
+main section img {
+    width:90%;
+}
+
+section {
+    width:70%;
+    display:inline-block;
+}
+aside {
+    width:30%;
+    float:right;
+}
+
+p {
+    margin:20px;
+}
+main > * {
+    margin: 20px 0;
+}
+
+nav a {
+    transition-timing-function: ease;
+    transition-property: background-color;
+    transition-duration: 0.6s;
+}
+
+nav a:hover {
+    background-color: #a79189;
+}
+
+@media (max-width: 960px) {
+    
+body {
+    width:100%;
+}
+    
+    section {
+        width:100%;
+    }
+    aside {
+        float:none;
+        width:100%;
+    }
+  }
+  
+
+@media (max-width: 560px) {
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    aside {
+        display:none
+    }
+  }
+  

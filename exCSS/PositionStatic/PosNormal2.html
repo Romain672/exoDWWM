@@ -1,0 +1,75 @@
+<!--
+Bonjour,
+Question 3)
+Les éléments occupant toute la place ou non sont du aux balises inline présente par défaut ou non.
+La mise en forme est parfois faite par défaut par le navigateur.
+En tant que développeur web, on peut toute les changer pour que tout les navigateurs répondent de la même façon.
+--->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les bases CSS - Position Flux normal</title>
+    <link rel="stylesheet" href="../normalize.css">
+    <style>
+        h1,
+        h2 {
+            background-color: darkgray;
+        }
+
+        #zoneTexte {
+            background-color: green;
+        }
+
+        #zoneImages {
+            background-color: violet;
+        }
+
+        p {
+            background-color: yellow;
+        }
+
+        img {
+            background-color: aqua;
+        }
+
+        span {
+            background-color: orange;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        #zoneTexte {
+            overflow: hidden;
+            display: inline-block;
+
+        }
+     img {
+            margin: 15px;
+            padding: 10px;
+            width: 55px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mes images</h1>
+    <h2>En position normal</h2>
+    <div id="zoneTexte">
+        <p>Ce sont des images <span id="span1">libres</span><span id="span2">de droit</span> de nourriture</p>
+        <p>Deuxième paragraphe</p>
+        <p>Troisième paragraphe</p>
+    </div>
+    <div id="zoneImages">
+        <img src="images/img3.jpg" /><img src="images/img1.jpg" />
+        <img src="images/img2.jpg" />
+
+    </div>
+</body>
+
+</html>
