@@ -1,0 +1,40 @@
+body {
+    background-color: darkslategray;
+    color:white;
+}
+
+header {
+    font-size: 25px;
+}
+
+section, header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:30px;
+}
+a {
+    padding:40px;
+    display:inline-block;
+    text-align: center;
+    overflow: auto;
+    margin:10px;
+    border: white 1px solid;
+    width:150px;
+    font-size: 20px;
+}
+
+a:link {
+    color: lightgreen;
+}
+
+
+a:visited {
+    color: lightcoral;
+}
+body > a {
+    font-size:50px;
+}
+body {
+    margin-top:50px;
+}
