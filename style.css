@@ -1,5 +1,5 @@
 body {
-    background-color: darkslategray;
+    background-color: darkslategrey;
     color:white;
 }
 
@@ -23,6 +23,7 @@ section > a, header > a {
     margin:15px;
     margin-left:40px;
     border: solid 1px white;
+    background-color: #1f2f2f
 }
 
 a:link {
