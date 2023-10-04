@@ -20,4 +20,15 @@ if (seconde==60) {
         }
     }
 }
+
+if (seconde<10){
+    seconde = "0" + seconde;
+}
+if (minute<10){
+    minute = "0" + minute;
+}
+if (heure<10){
+    heure = "0" + heure;
+}
+
 alert("Dans une seconde il sera " + heure + "h" + minute + "m" + seconde + "s.");

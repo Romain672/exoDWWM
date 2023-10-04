@@ -17,49 +17,50 @@ const annee = prompt("Quel année est-il?");
 let validite = new Boolean();
 
 switch (mois) {
-    case "1":
-    case "3":
-    case "5":
-    case "7":
-    case "8":
-    case "10":
-        if (jour < 1 || jour > 31) {
-            validite=false;
-        } else {
-            validite=true;
-        }
+  case "1":
+  case "3":
+  case "5":
+  case "7":
+  case "8":
+  case "10":
+  case "12":
+    if (jour < 1 || jour > 31) {
+      validite = false;
+    } else {
+      validite = true;
+    }
     break;
-    case "4":
-    case "6":
-    case "9":
-    case "11":
-        if (jour < 1 || jour > 30) {
-            validite=false;
-        } else {
-            validite=true;
-        }
+  case "4":
+  case "6":
+  case "9":
+  case "11":
+    if (jour < 1 || jour > 30) {
+      validite = false;
+    } else {
+      validite = true;
+    }
     break;
-    case "2":
-        if (jour < 1 || jour > 28) {
-            if (jour == 29) {
-                if (annee%400==0 || (annee%100!=0 && annee%4==0)) {
-                    validite=true;
-                } else {
-                    validite=false;
-                }
-            } else {
-                validite=false;
-            }
+  case "2":
+    if (jour < 1 || jour > 28) {
+      if (jour == 29) {
+        if (annee % 400 == 0 || (annee % 100 != 0 && annee % 4 == 0)) {
+          validite = true;
         } else {
-            validite=true;
+          validite = false;
         }
+      } else {
+        validite = false;
+      }
+    } else {
+      validite = true;
+    }
     break;
-    default:
+  default:
     console.log("Mois non valide.");
 }
 //console.log(validite);
-if (validite==true) {
-    alert("Date valide");
+if (validite == true) {
+  alert("Date valide");
 } else {
-    alert("Date non valide");
+  alert("Date non valide");
 }

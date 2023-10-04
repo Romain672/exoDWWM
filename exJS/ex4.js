@@ -37,7 +37,7 @@ tarif = tarif - accidents;
 if (tempsdanslacompagnie >= 5 && tarif >= 0) {
     tarif++;
 }
-alert (tarif);
+//alert (tarif);
 switch (tarif) {
     case 3:
     alert ("Somptueux! Tu peux avoir un tarif bleu.");

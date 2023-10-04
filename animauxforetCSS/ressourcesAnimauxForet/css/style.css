@@ -36,6 +36,6 @@ img {
 
 
 /* Extra code for last line of flex */
-/*.extra {
+.extra {
   visibility: hidden;
-}*/
+}
