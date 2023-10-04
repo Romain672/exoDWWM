@@ -8,9 +8,9 @@ getMax(5, 9, 1) ➞ 9
 getMax(2, 3, 10) ➞ 10
 */
 
-let nbr1 = prompt ("Entrer un nombre");
-let nbr2 = prompt ("Entrer un autre nombre");
-let nbr3 = prompt ("Entrer un dernier nombre");
+const nbr1 = prompt ("Entrer un nombre");
+const nbr2 = prompt ("Entrer un autre nombre");
+const nbr3 = prompt ("Entrer un dernier nombre");
 alert ("Le plus grand des trois nombres est " + getMax(nbr1, nbr2, nbr3) + ".");
 
 function getMax (nbr1, nbr2, nbr3) {

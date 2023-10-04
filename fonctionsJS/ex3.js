@@ -8,7 +8,7 @@ increment(1) ➞ 2
 increment(4) ➞ 5
 */
 
-let nbr = prompt ("Entrer un nombre");
+const nbr = prompt ("Entrer un nombre");
 alert ("Ce nombre augmenté de un est " + increment(nbr) + ".");
 
 function increment (nbr1) {

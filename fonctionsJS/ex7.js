@@ -12,7 +12,7 @@ On crée un nombre aléatoire entre 0 et 10, ensuite on demandera à l'utilisate
 const devinette = Math.floor(Math.random() * 11);
 
 alert("J'ai choisi un nombre entre 0 et 10:");
-let nbressaimax = 3;
+const nbressaimax = 3;
 
 
 let nbressairestant = nbressaimax;

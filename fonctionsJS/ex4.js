@@ -8,8 +8,8 @@ getSurface(8, 2) ➞ 8
 getSurface(7, 3) ➞ 10.5
 */
 
-let base = prompt ("Entrer une base");
-let hauteur = prompt ("Entrer une hauteur");
+const base = prompt ("Entrer une base");
+const hauteur = prompt ("Entrer une hauteur");
 alert ("La surface du triangle est " + getSurface(base, hauteur) + ".");
 
 function getSurface (base, hauteur) {

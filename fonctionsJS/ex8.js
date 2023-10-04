@@ -5,7 +5,7 @@ Les nombres premiers
 
 Créer une fonction `estPremier()` qui permet d'indiquer si un nombre est premier
 */
-let nbr = prompt("Entre un nombre");
+const nbr = prompt("Entre un nombre");
 estPremier(nbr);
 if (estPremier(nbr)==true) {
   alert("C'est un nombre premier.");

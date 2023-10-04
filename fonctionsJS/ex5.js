@@ -8,7 +8,7 @@ strReverse(‘Salut’) ➞ tulaS
 strReverse(‘Hello’) ➞ olleH
 */
 
-let chaine = prompt ("Entrer une chaine de texte");
+const chaine = prompt ("Entrer une chaine de texte");
 alert ("La chaine de texte inversé est " + strReverse(chaine) + ".");
 
 function strReverse (oldchaine) {

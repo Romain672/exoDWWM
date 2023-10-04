@@ -8,8 +8,8 @@ addition(1, 2) ➞ 3
 addition(-2, -4) ➞ -6
 */
 
-let nbr1 = prompt ("Entrer un premier nombre");
-let nbr2 = prompt ("Entrer un premier nombre");
+const nbr1 = prompt ("Entrer un premier nombre");
+const nbr2 = prompt ("Entrer un deuxième nombre");
 alert ("La somme des nombres est " + addition(nbr1, nbr2) + ".");
 
 

@@ -9,7 +9,7 @@ minuteToSecond(3) ➞ 180
 */
 
 
-let minutes = prompt ("Entrer un nombre de minutes");
+const minutes = prompt ("Entrer un nombre de minutes");
 alert ("Cela équivaut à " + minuteToSecond(minutes) + " secondes.");
 
 function minuteToSecond(nbr1) {
