@@ -1,8 +1,20 @@
 /*
-Nombre premiers
+### Exercice 8
+
+Les nombres premiers
+
+Créer une fonction `estPremier()` qui permet d'indiquer si un nombre est premier
 */
 let nbr = prompt("Entre un nombre");
+estPremier(nbr);
+if (estPremier(nbr)==true) {
+  alert("C'est un nombre premier.");
+} else {
+  alert("Ce n'est pas un nombre premier.");
+}
 
+function estPremier(nbr) {
+  
 if (nbr > 100000) {
   alert("Le nombre choisit est trop grand.");
 } else {
@@ -13,15 +25,16 @@ if (nbr > 100000) {
     let question = estDiviseur(2, nbr);
     switch (question) {
       case "bon":
-        alert("C'est un nombre premier.");
+        return true;
         break;
       case "faux":
-        alert("Ce n'est pas un nombre premier.");
+        return false;
       break;
         deafut: alert("Le programme à buggé.");
     }
     //coeur <==
   }
+}
 }
 
 function estDiviseur(i, nbr) {
