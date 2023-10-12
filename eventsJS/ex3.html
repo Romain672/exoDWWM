@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+<body class="bg-secondary">
+    <main class="text-center mx-auto ">
+    <form class="bg-success w-50 p-4 mx-auto mt-5">
+        <div class="form-group">
+          <label for="ageInput1" class="d-block">Heure?</label>
+          <input type="number" class="form-control w-25 d-inline text-center" id="heureInput" placeholder="5" required>
+          h
+          <input type="number" class="form-control w-25 d-inline text-center" id="minuteInput" placeholder="42" required>
+          m
+          <input type="number" class="form-control w-25 d-inline text-center" id="secondeInput" placeholder="42" required>
+          s
+        </div>
+
+
+        <img src="tictac.png" alt="image horloge" class="d-block m-auto p-5">
+        <button type="submit" class="btn btn-primary mt-5 d-block m-auto">Submit</button>
+      </form>
+
+
+    </main>
+    
+    <div id="resultat" class="bg-danger m-auto mt-5 w-50"></div>
+    
+    
+    <script src="./ex3.js"></script>
+</body>
+</html>
