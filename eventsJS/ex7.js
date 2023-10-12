@@ -34,7 +34,9 @@ function fufu(event) {
     tout les caractères dont le code UTF-16 est augmenté de 1 ou de -1 par rapport au précédent et au deux précédent (exemple: ghi) sont ignorés
     
     Score final:
-
+    Gros bonus sur les deux premières caractères de chaque critère (+7.5% & +2.5%). Puis petit bonus décroissant jusqu'a 28 caractères dans chaque critère (jusqu'a +5%).
+    Bonus de 1% par caractère différent, max 10
+    Puis résultat final (divisé par 2 si inférieur à 27 sinon) diminué de 20 et multiplié par 2.
   */
   let critere = [0, 0, 0, 0];
   let bonusUnicite = [];
@@ -117,11 +119,31 @@ function fufu(event) {
     bonusUnicite.length
   );
 
+  //70-40
+  //0>0
+  //10>10
+  //20>20
+  //30>40
+  //40>60
+  //50>80
+  //60>90
+  //70>100
+if (newprogression<20){
+  newprogression = newprogression;
+} else {
+  if (newprogression < 50) {
+  newprogression = newprogression * 2 - 20;
+}else {
+  newprogression = newprogression + 30;
+}
+}
+
+/*
   if (newprogression<27){
     newprogression = newprogression / 2;
   } else {
     newprogression = (newprogression-20)*2;
-  }
+  }*/
 
   document.getElementById("resultat").style = "width:" + newprogression + "%";
 
@@ -131,15 +153,15 @@ function fufu(event) {
   document.getElementById("resultat").classList.remove("bg-success");
   document.getElementById("resultat").classList.remove("bg-primary");
 switch (true){
-    case newprogression<20:
+    case newprogression<30:
         document.getElementById("motresultat").innerHTML = "Dangereux";
         document.getElementById("resultat").classList.add("bg-danger");
     break;
-    case newprogression<40:
+    case newprogression<50:
         document.getElementById("motresultat").innerHTML = "Moyen";
         document.getElementById("resultat").classList.add("bg-warning");
     break;
-    case newprogression<60:
+    case newprogression<70:
         document.getElementById("motresultat").innerHTML = "Sécurisé";
     document.getElementById("resultat").classList.add("bg-success");
     break;
