@@ -32,16 +32,37 @@ function fufu(event) {
     bonusUnicité: combien de caractères uniques sachant que majuscule=minuscule
     tout les caractères à la suite de deux caractères identiques sont ignorés
     tout les caractères dont le code UTF-16 est augmenté de 1 ou de -1 par rapport au précédent et au deux précédent (exemple: ghi) sont ignorés
-    
+    si le mot de passe est trop commun, il est réduit à 3% au final.
+
     Score final:
     Gros bonus sur les deux premières caractères de chaque critère (+7.5% & +2.5%). Puis petit bonus décroissant jusqu'a 28 caractères dans chaque critère (jusqu'a +5%).
-    Bonus de 1% par caractère différent, max 10
-    Puis résultat final (divisé par 2 si inférieur à 27 sinon) diminué de 20 et multiplié par 2.
+    Bonus de 1 par caractère différent, max 10.
+    On a un score entre 0 et 70. Les points gagnés entre 20 et 50 sont doublés pour avoir un score final entre 0 et 100.
   */
   let critere = [0, 0, 0, 0];
   let bonusUnicite = [];
+  //mots de passe trop communs: ceux qui se répètent n'ont pas été écrits
+  let communs = ["azerty", "azertyuiop", "avf2013", "loulou", "password", "doudou", "marseille", "amiret2015",
+  "motdepasse", "soleil", "cheval", "bonjour", "chouchou", "jetaime", "guest", "qwerty", "col123456", "123123", "Password1", "abc123"];
+
+
+  for (let i = 0; i<motdepasse.length;i++){
+    if (communs[i] == motdepasse){
+      //mots de passe trop communs
+      console.log("Mot de passe trop commun");
+      document.getElementById("resultat").style = "width: 3%";
+      document.getElementById("resultat").classList.remove("bg-danger");
+      document.getElementById("resultat").classList.remove("bg-warning");
+      document.getElementById("resultat").classList.remove("bg-success");
+      document.getElementById("resultat").classList.remove("bg-primary");
+      document.getElementById("motresultat").innerHTML = "Dangereux";
+      document.getElementById("resultat").classList.add("bg-danger");
+      return;
+    }
+  }
+
   for (let i = 0; i < motdepasse.length; i++) {
-    check = 0;
+    let check = 0;
     if (i<2) {
         check=1;
     } else {
@@ -57,7 +78,6 @@ function fufu(event) {
           }
     }
     if (check==1){
-        console.log(motdepasse[i]);
         //console.log(motdepasse[i]);
         if (motdepasse[i].match(/^[a-z]$/)) {
           //console.log("a-z");
@@ -91,7 +111,7 @@ function fufu(event) {
     }
 
   let newprogression = bonusUnicite.length;
-  console.log(newprogression);
+  //console.log(newprogression);
   for (let i = 0; i < 4; i++) {
     if (critere[i] > 0) {
       if (critere[i] > 1) {
@@ -109,25 +129,8 @@ function fufu(event) {
     }
   }
 
-  console.log(
-    newprogression,
-    ">",
-    critere[0],
-    critere[1],
-    critere[2],
-    critere[3],
-    bonusUnicite.length
-  );
+ //console.log(newprogression,">",critere[0], critere[1], critere[2], critere[3], bonusUnicite.length);
 
-  //70-40
-  //0>0
-  //10>10
-  //20>20
-  //30>40
-  //40>60
-  //50>80
-  //60>90
-  //70>100
 if (newprogression<20){
   newprogression = newprogression;
 } else {
