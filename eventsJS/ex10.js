@@ -188,7 +188,8 @@ function changecolor(event){
   } else {
     newColor= listColors[idColor+1];
   }
-  const numberOfDotClicked = event.originalTarget.cellIndex-2;
+  const numberOfDotClicked = event.target.cellIndex-2;
+  console.log(event);
   document.querySelector("tbody").querySelectorAll("td")[numberOfDotClicked+1+6*totalNewLines].innerHTML = newColor.img;
 }
 
