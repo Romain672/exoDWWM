@@ -29,7 +29,7 @@ function nouvelObject (event) {
     let random = Math.floor(Math.random()*9);
     document.getElementById("currentObject").src = "ex8-ObjectsInutiles/" + listimages[random] + ".jpg";
     document.getElementById("nomimage").innerHTML = nomimages[random];
-    prixatrouver = listimages[random].match(/[0-9.]+$/);
+    prixatrouver = parseInt(listimages[random].match(/[0-9.]+$/));
     document.getElementById("resultat").innerHTML = "";
     nbressaisrestants = 10;
 }
