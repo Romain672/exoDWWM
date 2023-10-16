@@ -66,7 +66,7 @@ function validation (){
   }
   let flag=0;
   for (i=0;i<4;i++){
-   if(colorsChosen[i]=="⚪"){
+   if(colorsChosen[i]==undefined){
     flag=1;
     break;
    }
@@ -189,7 +189,6 @@ function changecolor(event){
     newColor= listColors[idColor+1];
   }
   const numberOfDotClicked = event.target.cellIndex-2;
-  console.log(event);
   document.querySelector("tbody").querySelectorAll("td")[numberOfDotClicked+1+6*totalNewLines].innerHTML = newColor.img;
 }
 
