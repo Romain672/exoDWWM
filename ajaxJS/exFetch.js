@@ -21,7 +21,7 @@ Promise.allSettled([
       data2 = s;
 
       //extra pour rendre la liste plus intéressante
-      let temp = data2[7];
+      const temp = data2[7];
       data2[7] = data2[8];
       data2[8] = temp;
       console.log("s", data2);

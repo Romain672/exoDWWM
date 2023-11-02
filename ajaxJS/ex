@@ -1,0 +1,5 @@
+# Exercice Fetch
+
+## Afficher les noms des utilisateurs des posts
+
+A partir des informations vu en cours, vous allez devoir afficher les posts, via placeholder [JSON placeholder](https://jsonplaceholder.typicode.com/), et faire une relation entre les postes et les utilisateurs (json/posts <=> json/users) afin d'afficher une carte avec le titre, la description (50 caractères) ainsi que l'utilisateur du post

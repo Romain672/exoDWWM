@@ -1,0 +1,25 @@
+/*Background*/
+body {
+  background-image: url(../img/backgroundTable.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width: 1000px) {
+  body {
+    background-position:initial;
+  }
+}
+
+
+@media(max-width: 710px) {
+  header div * {
+    min-width:120px;
+  }
+  form div div div {
+    min-width:150px;  
+  }
+  form div div button {
+    min-width: 120px;
+  }
+}

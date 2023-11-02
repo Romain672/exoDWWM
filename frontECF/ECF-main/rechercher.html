@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechercher</title>
+    
+    <link rel="icon" href="assets/icone.png"/>
+
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styleRechercher.css">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+
+</head>
+
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <header>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-around">
+                <div class="col-2 bg-secondary d-flex align-items-center text-center border border-white mt-2">Ma vidéothèque</div>
+                <button class="col-2 btn bg-secondary border border-white mt-2">Accueil</button>
+                <button class="col-2 btn bg-secondary border border-white mt-2">Rechercher</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="message" class="bg-info text-center"></div>
+
+
+    <aside class="mt-2">
+
+        <div class="bg-info border border-white m-2 p-1 d-inline">Rechercher un film:</div>
+        <form class="form-group">
+            <div class="container-fluid">
+                <div class="row p-0 m-0 d-flex align-items-center">
+                    <div class="col-auto form-group m-2 bg-white border border-black">
+                        <label for="inputTitre" class="position-absolute"></label>
+                        <input type="text" class="form-control-plaintext" id="inputTitre" aria-describedby="titreHelp"
+                            placeholder="Entrer un titre">
+                    </div>
+                    <div class="col-auto form-group m-2 bg-white border border-black">
+                        <label for="inputAnnee" class="position-absolute"></label>
+                        <input type="number" class="form-control-plaintext" id="inputAnnee" aria-describedby="anneeHelp"
+                            placeholder="Entrer une année">
+                    </div>
+                    <div id="filtrer" class="col-auto m-2 bg-danger"> Type:
+                        <div class="col-auto my-1">
+                            <label class="mr-sm-2" for="inputType"></label>
+                            <select class="custom-select mr-sm-2" id="inputType">
+                                <option selected value="aucun">Aucun</option> <!--disabled enlevé pour pouvoir déselectionner l'élément-->
+                                <option value="movie">Film</option>
+                                <option value="episode">Episode</option>
+                                <option value="series">Série</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="col-auto m-2 btn btn-success col-2">Rechercher</button>
+                </div>
+            </div>
+        </form>
+
+    </aside>
+    <main>
+
+    
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            </div>
+        </div>
+        
+        <div class="text-center mt-2">
+        <button class="d-none bg-warning"><= Page précédente</button>
+        <button class="d-none bg-warning">Page suivante =></button>
+    </div>
+    </main>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="assets/js/rechercher.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!-- https://github.com/deck-of-cards/deck-of-cards -->
+<html>
+<head>
+    <title>Cards</title>
+
+    <link rel="stylesheet" href="../../Autres/node_modules/deck-of-cards/example/example.css">
+</head>
+
+<body>
+    <script src="../../Autres/node_modules/deck-of-cards/dist/deck.min.js"></script>
+
+    <div id="container"></div>
+
+    <script>
+        var $container = document.getElementById('container');
+        // 0 V fonction explosion pour envoyer les cartes partout sur la table
+        
+        function explode(card, i) {
+            card.setSide(Math.random() < 0.5 ? 'front' : 'back');
+
+            // explode
+            card.animateTo({
+                delay: 1000 + i * 2, // wait 1 second + i * 2 ms
+                duration: 500,
+                ease: 'quartOut',
+
+                x: Math.random() * window.innerWidth - window.innerWidth / 2,
+                y: Math.random() * window.innerHeight - window.innerHeight / 2
+            });
+        }
+        
+
+        //0 ^
+        // 1 V creation du deck et example avec l'explosion
+        /*
+        // create Deck
+        var deck = Deck();
+        
+        // add to DOM
+        deck.mount($container);
+        
+        deck.cards.forEach(explode);
+        
+    
+        //1 ^
+        //2 (+1) V explosion + shuffle (cartes remis au centre) toutes les 2 secondes
+
+        
+        setInterval(function () {
+            deck.shuffle();
+            setTimeout(deck.cards.forEach(explode), 2000);
+        },4000);
+        */
+
+        //2 (+1) ^
+        //3 V enlever les cartes noires
+
+        
+        var deck2 = Deck();
+        deck2.mount($container);
+
+        for (let i = 0; i < deck2.cards.length; i++) {
+            try {
+                while (deck2.cards[i].suit == 0 || deck2.cards[i].suit == 2) {
+                    deck2.cards[i].unmount();
+                    deck2.cards.splice(i, 1);
+                }
+            }
+            catch { }
+        }
+        deck2.cards.forEach(explode);
+        
+
+        //3 ^
+        //4 (+3) V extra: flip toutes les cartes, 
+/*
+        // Flip all cards in deck
+        
+        setInterval(function () {
+            deck2.flip();
+        }, 2000);
+*/
+        
+        // Sort cards
+        setTimeout(sort, 2000);
+        function sort () {
+            deck2.sort();
+            for (let i=0;i<deck2.cards.length;i++) {
+                deck2.cards[i].animateTo({
+                    delay: 500,
+                    duration: 1000,
+                    ease: 'quartOut',
+                    x: i * 35 - 390,
+                    y: 0,
+                });
+            }
+        }
+        // Allow to flip it
+        for (let i = 0; i < deck2.cards.length; i++) {
+            deck2.cards[i].enableFlipping();
+        }
+        
+
+        //4 (+3) ^
+        //5 (extras)V
+
+        // Shuffle
+        //deck.shuffle();
+
+        // Display fan
+        /*
+        setInterval(function () {
+        deck2.fan();
+        }, 2000);*/
+
+        // Remove deck from html container, hide it
+        //deck.unmount();
+
+        //5 (extras) ^
+
+    </script>
+</body>
+</html>

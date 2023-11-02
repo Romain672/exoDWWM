@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="icon" href="assets/icone.png"/>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styleIndex.css">
+    <script src="assets/js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-around">
+                <div class="col-2 bg-secondary d-flex align-items-center text-center border border-white mt-2">Ma vidéothèque</div>
+                <button class="col-2 btn bg-secondary border border-white mt-2">Accueil</button>
+                <button class="col-2 btn bg-secondary border border-white mt-2">Rechercher</button>
+            </div>
+        </div>
+    </header>
+
+
+<div id="confirmationSuppression" class="mt-2 d-flex justify-content-around">
+        <div id="messageConfirmationSuppression" class="bg-info text-wrap d-flex justify-content-center position-absolute"></div>
+        <!--La valeur des boutons est potentiellement inversé, mais vu que je change pas leur texte, ça semble bizarre. Mais vu qu'ils ont les mêmes classes, j'ai pas trop cherché à comprendre pourquoi-->
+        <button class="bg-danger d-none position-relative mt-5 w-25 fs-5">Oui</button>
+        <button class="bg-success d-none position-relative mt-5 w-25 fs-5">Non</button>
+</div>
+
+
+
+    <aside>
+        <div class="bg-info border border-white m-2 p-1 d-inline">Ajouter un autre film</div>
+
+        <form class="form-group collapse">
+            <div class="container-fluid">
+                <div class="row  d-flex justify-content-around">
+                    <div class="col-auto form-group m-2 bg-white border border-black">
+                        <label for="inputTitre" class="position-absolute"></label>
+                        <input type="text" class="form-control-plaintext" id="inputTitre" aria-describedby="titreHelp"
+                            placeholder="Entrer un titre">
+                    </div>
+                    <div class="col-auto form-group m-2 bg-white border border-black">
+                        <label for="inputAnnee" class="position-absolute"></label>
+                        <input type="number" class="form-control-plaintext" id="inputAnnee" aria-describedby="anneeHelp"
+                            placeholder="Entrer une année">
+                    </div>
+                    <div class="col-auto form-group m-2 bg-white border border-black">
+                        <label for="inputAuteur" class="position-absolute"></label>
+                        <input type="text" class="form-control-plaintext" id="inputAuteur" aria-describedby="auteurHelp"
+                            placeholder="Entrer un auteur">
+                    </div>
+                    <button type="submit" class="btn btn-success col-2 m-2 border border-white">Sauvegarder</button>
+            </div>
+        </div>
+        </form>
+
+        <div id="filtrer" class="bg-danger border border-white m-2 p-1 d-inline"> Filtrer par:
+            <div class="col-auto m-1 d-inline">
+                <label class="mr-sm-2" for="inlineFormCustomSelect"></label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected value="nom">Titre</option>
+                    <option value="date">Année</option>
+                </select>
+            </div>
+        </div>
+    </aside>
+
+
+    <main class="m-2">
+        <div class="container-fluid border-white">
+            <div class="row d-flex justify-content-center">
+                <div class="w-25 bg-secondary border-bottom border-top border-start">Titre</div>
+                <div class="w-25 bg-secondary border-bottom border-top">Année</div>
+                <div class="w-25 bg-secondary border-bottom border-top">Réalisateur</div>
+                <div class="w-25 bg-secondary border-bottom border-top border-end"><!--Vide--></div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    
+</body>
+
+</html>
