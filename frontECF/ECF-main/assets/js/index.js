@@ -34,10 +34,22 @@ document
   .addEventListener("click", ouvreRechercher);
 
 function ouvreRechercher() {
-  window.open("rechercher.html");
+  let path = window.location.pathname;
+  path = path.substring(path.length-5,path.length-6);
+  console.log(path);
+  if (path=="x" || path=="r"){
+    path="";
+  }
+  window.open("rechercher" + path + ".html", "self");
 }
 function ouvreIndex() {
-  window.open("index.html");
+  let path = window.location.pathname;
+  path = path.substring(path.length-5,path.length-6);
+  console.log(path);
+  if (path=="x" || path=="r"){
+    path="";
+  }
+  window.open("index" + path + ".html", "self");
 }
 
 let maindivdivbutton = document.querySelectorAll("main div div button");

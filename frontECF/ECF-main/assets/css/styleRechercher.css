@@ -24,3 +24,16 @@ body {
     min-width: 120px;
   }
 }
+
+
+@media(max-width: 400px) {
+  header div * {
+    min-width:120px;
+  }
+  form div div div {
+    min-width:150px;  
+  }
+  form div div button {
+    min-width: 120px;
+  }
+}

@@ -15,10 +15,10 @@ document
   .addEventListener("click", ouvreRechercher);*/
 
 function ouvreRechercher() {
-  window.open("rechercher.html");
+  window.open("rechercher2.html", "self");
 }
 function ouvreIndex() {
-  window.open("index.html");
+  window.open("index2.html", "self");
 }
 
 document
@@ -31,7 +31,7 @@ function validerFormulaire(event) {
   let estcequecestbon = 0;
   let messagefinal = "";
 
-  bordures = document.querySelectorAll("form div div div");
+  bordures = document.querySelectorAll("form div div div input");
 
   //Vérification du formulaire
   if (inputTitre.value == "") {

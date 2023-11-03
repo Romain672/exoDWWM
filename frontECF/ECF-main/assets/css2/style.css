@@ -1,0 +1,93 @@
+body{
+  text-align: center;
+}
+
+header {
+  background-color: purple;
+  padding: 1em 0;
+  background-color: skyblue;
+}
+
+header div div {
+  display: flex;
+  justify-content:space-around;
+}
+header div div div {
+  padding: 1em 0;
+  background-color: green;
+  border: solid black 3px;
+}
+
+header div div button, main button {
+  padding: 1em;
+  background-color: green;
+  border: solid black 3px;
+}
+
+#confirmationSuppression {
+  background-color: blueviolet;
+}
+
+#confirmationSuppression button:nth-child(2) {
+  background-color:lightgreen;
+}
+
+#confirmationSuppression button:nth-child(3) {
+  background-color: lightcoral;
+}
+
+aside>div{
+  background-color: lightgrey;
+}
+
+aside form>div>div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  background-color: lightcyan;
+  padding: 1em 0;
+}
+aside form input {
+  border: solid black 5px;
+  width:200px;
+  height:35px;
+  margin:0.2em;
+}
+aside form button {
+  border: solid black 5px;
+  width:200px;
+  height:35px;
+  background-color: lightgreen;
+  margin:0.2em;
+}
+
+#filtrer {
+  display:block;
+  width:200px;
+  background-color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Enlever flèches de l'input année:*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
