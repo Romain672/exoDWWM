@@ -1,9 +1,8 @@
 //bibliothèque
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 5,});
-
-
+  slidesPerView: 5,
+});
 
 //http://www.omdbapi.com/?apikey=8c7bf108&s=Star+wars
 
@@ -15,10 +14,22 @@ document
   .addEventListener("click", ouvreRechercher);*/
 
 function ouvreRechercher() {
-  window.open("rechercher2.html", "self");
+  let path = window.location.pathname;
+  path = path.substring(path.length - 5, path.length - 6);
+  console.log(path);
+  if (path == "x" || path == "r") {
+    path = "";
+  }
+  window.open("rechercher" + path + ".html", "self");
 }
 function ouvreIndex() {
-  window.open("index2.html", "self");
+  let path = window.location.pathname;
+  path = path.substring(path.length - 5, path.length - 6);
+  console.log(path);
+  if (path == "x" || path == "r") {
+    path = "";
+  }
+  window.open("index" + path + ".html", "self");
 }
 
 document
@@ -118,7 +129,6 @@ function demarrerFetch() {
         buttons[1].classList.remove("d-none");
       }
 
-
       if (s.Response == "False") {
         document.getElementById("message").innerHTML =
           "Aucun résultat trouvé :(";
@@ -128,10 +138,9 @@ function demarrerFetch() {
         return;
       }
 
-
       const parent = document.querySelector("main>div>div");
       parent.textContent = "";
-      
+
       for (let i = 0; i < data.length; i++) {
         /*
             <div class="swiper-slide bg-danger swiper-slide-active">Slide 1</div>
@@ -145,7 +154,7 @@ function demarrerFetch() {
             <div class="swiper-slide bg-warning">Slide 9</div>
             <div class="swiper-slide bg-info">Slide 10</div>
         */
-       /*
+        /*
         const parent= document.createElement("div");
         parent.classList.add("swiper-slide");
         parent.classList.add("bg-danger");
@@ -155,7 +164,10 @@ function demarrerFetch() {
 
         //const parent = document.querySelector("main div");
         const newrow = document.createElement("div");
-        newrow.setAttribute("class", "bg-info text-center swiper-slide bg-info");
+        newrow.setAttribute(
+          "class",
+          "bg-info text-center swiper-slide bg-info"
+        );
         parent.append(newrow);
 
         const div1 = document.createElement("img");
