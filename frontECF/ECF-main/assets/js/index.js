@@ -96,31 +96,56 @@ function validerFormulaire(event) {
 
   //Vérification du formulaire
   bordures = document.querySelectorAll("form div div div");
+  console.log(bordures);
   if (inputTitre.value.length < 2) {
     estcequecestbon = 1;
-    bordures[0].setAttribute("style", "border: solid red 5px");
+    bordures[0].classList.remove("border-black");
+    bordures[0].classList.add("border-danger");
+    bordures[0].classList.add("border-5");
+    bordures[0].classList.remove("border-1");
     messagefinal += "</br>Le titre doit avoir au moins 2 caractères.";
   } else {
-    bordures[0].setAttribute("style", "border: solid black 5px");
+    bordures[0].classList.add("border-black");
+    bordures[0].classList.remove("border-danger");
+    bordures[0].classList.remove("border-5");
+    bordures[0].classList.add("border-1");
   }
   const anneeActuelle = new Date().getFullYear();
   bordures[1].setAttribute("style", "border: solid black 5px");
   if (inputAnnee.value < 1900 || inputAnnee.value > anneeActuelle) {
     estcequecestbon = 1;
-    bordures[1].setAttribute("style", "border: solid red 5px");
+    bordures[1].classList.remove("border-black");
+    bordures[1].classList.add("border-danger");
+    bordures[1].classList.add("border-5");
+    bordures[1].classList.remove("border-1");
     messagefinal +=
       "</br>L'année doit être comprise entre 1900 et " + anneeActuelle + ".";
+  } else {
+    bordures[1].classList.add("border-black");
+    bordures[1].classList.remove("border-danger");
+    bordures[1].classList.remove("border-5");
+    bordures[1].classList.add("border-1");
   }
   if (Math.floor(inputAnnee.value) != inputAnnee.value) {
     estcequecestbon = 1;
-    bordures[1].setAttribute("style", "border: solid red 5px");
+    bordures[1].classList.remove("border-black");
+    bordures[1].classList.add("border-danger");
+    bordures[1].classList.add("border-5");
+    bordures[1].classList.remove("border-1");
     messagefinal += "</br>L'année doit être un nombre entier.";
   }
   if (inputAuteur.value.length < 5) {
     estcequecestbon = 1;
-    bordures[2].setAttribute("style", "border: solid red 5px");
+    bordures[2].classList.remove("border-black");
+    bordures[2].classList.add("border-danger");
+    bordures[2].classList.add("border-5");
+    bordures[2].classList.remove("border-1");
     messagefinal += "</br>Le réalisateur doit avoir au moins 5 caractères.";
   } else {
+    bordures[2].classList.add("border-black");
+    bordures[2].classList.remove("border-danger");
+    bordures[2].classList.remove("border-5");
+    bordures[2].classList.add("border-1");
     bordures[2].setAttribute("style", "border: solid black 5px");
   }
   if (estcequecestbon == 0) {

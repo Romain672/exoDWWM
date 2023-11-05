@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="container-fluid">
-            <div class="row d-flex justify-content-around">
+            <div class="row d-flex justify-content-around m-2 d-inline">
                 <div class="col-2 bg-secondary d-flex align-items-center text-center border border-white mt-2">Ma vidéothèque</div>
                 <button class="col-2 btn bg-secondary border border-white mt-2">Accueil</button>
                 <button class="col-2 btn bg-secondary border border-white mt-2">Rechercher</button>
@@ -25,8 +25,9 @@
         </div>
     </header>
 
+    <div id="message" class="bg-info text-center"></div>
 
-<div id="confirmationSuppression" class="mt-2 d-flex justify-content-around">
+<div id="confirmationSuppression" class="m-2 d-flex justify-content-around">
         <div id="messageConfirmationSuppression" class="bg-info text-wrap d-flex justify-content-center position-absolute"></div>
         <!--La valeur des boutons est potentiellement inversé, mais vu que je change pas leur texte, ça semble bizarre. Mais vu qu'ils ont les mêmes classes, j'ai pas trop cherché à comprendre pourquoi-->
         <button class="bg-danger d-none position-relative mt-5 w-25 fs-5">Oui</button>
@@ -41,17 +42,17 @@
         <form class="form-group collapse">
             <div class="container-fluid">
                 <div class="row  d-flex justify-content-around">
-                    <div class="col-auto form-group m-2 bg-white border border-black">
+                    <div class="p-0 col-auto form-group m-2 bg-white border border-black">
                         <label for="inputTitre" class="position-absolute"></label>
                         <input type="text" class="form-control-plaintext" id="inputTitre" aria-describedby="titreHelp"
                             placeholder="Entrer un titre">
                     </div>
-                    <div class="col-auto form-group m-2 bg-white border border-black">
+                    <div class="p-0 col-auto form-group m-2 bg-white border border-black">
                         <label for="inputAnnee" class="position-absolute"></label>
                         <input type="number" class="form-control-plaintext" id="inputAnnee" aria-describedby="anneeHelp"
                             placeholder="Entrer une année">
                     </div>
-                    <div class="col-auto form-group m-2 bg-white border border-black">
+                    <div class="p-0 col-auto form-group m-2 bg-white border border-black">
                         <label for="inputAuteur" class="position-absolute"></label>
                         <input type="text" class="form-control-plaintext" id="inputAuteur" aria-describedby="auteurHelp"
                             placeholder="Entrer un auteur">
@@ -83,10 +84,6 @@
             </div>
         </div>
     </main>
-
-
-
-
 
     
 </body>
